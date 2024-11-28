@@ -73,25 +73,41 @@ $$
 ## 2. Determinants 2x2 and 3x3
 
 #### 2x2 Matrices
-For a 2x2 matrix $$ M = \begin{pmatrix} a & b \\ c & d \end{pmatrix} $$, the determinant is calculated as:
+For a 2x2 matrix 
+
+$$ M = \begin{pmatrix} a & b \\ c & d \end{pmatrix} $$
+
+, the determinant is calculated as:
 
 $$
 \text{det}(M) = ad - bc.
 $$
 
-1. For $$ A = \begin{pmatrix} 2 & 3 \\ 1 & 4 \end{pmatrix} $$ =
+1. For 
+
+$$ A = \begin{pmatrix} 2 & 3 \\ 1 & 4 \end{pmatrix} $$
+
+ =
 
 $$
 \text{det}(A) = (2)(4) - (3)(1) = 8 - 3 = 5.
 $$
 
-2. For $$ B = \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix} $$ =
+2. For 
+
+$$ B = \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix} $$
+
+ =
 
 $$
 \text{det}(B) = (5)(8) - (6)(7) = 40 - 42 = -2.
 $$
 
-3. For $$ C = \begin{pmatrix} -1 & 2 \\ 3 & 0 \end{pmatrix} $$ =
+3. For 
+
+$$ C = \begin{pmatrix} -1 & 2 \\ 3 & 0 \end{pmatrix} $$
+
+ =
 
 $$
 \text{det}(C) = (-1)(0) - (2)(3) = 0 - 6 = -6.
@@ -100,13 +116,21 @@ $$
 ---
 
 #### 3x3 Matrices
-For a 3x3 matrix $$ M = \begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix} $$, the determinant is:
+For a 3x3 matrix 
+
+$$ M = \begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix} $$
+
+, the determinant is:
 
 $$
 \text{det}(M) = a(ei - fh) - b(di - fg) + c(dh - eg).
 $$
 
-1. For $$ D = \begin{pmatrix} 1 & 0 & 2 \\ -1 & 3 & 1 \\ 2 & 4 & -2 \end{pmatrix} $$:
+1. For 
+
+$$ D = \begin{pmatrix} 1 & 0 & 2 \\ -1 & 3 & 1 \\ 2 & 4 & -2 \end{pmatrix} $$
+
+:
 
 $$
 \text{det}(D) = 1(3(-2) - 1(4)) - 0(-1(-2) - 1(2)) + 2((-1)(4) - 3(2)),
@@ -126,7 +150,11 @@ $$
 \text{det}(E) = 3(4 - 12) - 1(0 - 20) + (-1)(0 - 10) = 3(-8) - (-20) - (-10) = -24 + 20 + 10 = 6.
 $$
 
-3. For $$ F = \begin{pmatrix} 2 & -3 & 1 \\ 1 & 4 & -2 \\ 1 & 5 & 3 \end{pmatrix} $$ =
+3. For 
+
+$$ F = \begin{pmatrix} 2 & -3 & 1 \\ 1 & 4 & -2 \\ 1 & 5 & 3 \end{pmatrix} $$
+
+=
 
 $$
 \text{det}(F) = 2(4(3) - (-2)(5)) - (-3)(1(3) - (-2)(1)) + 1(1(5) - 4(1)),
@@ -140,11 +168,17 @@ $$
 
 ### Final Results
 - **2x2 Matrices**:
-  - $$ \text{det}(A) = 5 $$
-  - $$ \text{det}(B) = -2 $$
-  - $$ \text{det}(C) = -6 $$
+
+$$ \text{det}(A) = 5 $$
+
+$$ \text{det}(B) = -2 $$
+
+$$ \text{det}(C) = -6 $$
 
 - **3x3 Matrices**:
-  - $$ \text{det}(D) = -30 $$
-  - $$ \text{det}(E) = 6 $$
-  - $$ \text{det}(F) = 60 $$
+
+$$ \text{det}(D) = -30 $$
+
+$$ \text{det}(E) = 6 $$
+
+$$ \text{det}(F) = 60 $$
