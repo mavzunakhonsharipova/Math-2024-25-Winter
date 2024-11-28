@@ -2,26 +2,26 @@
 
 ### Given Matrices:
 $$
-A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}, \;
-B = \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}, \;
-C = \begin{pmatrix} -1 & 2 \\ 3 & 0 \end{pmatrix}, \;
-D = \begin{pmatrix} -1 & 2 \\ 3 & 4 \\ 0 & 6 \end{pmatrix}, \;
-E = \begin{pmatrix} 1 & 2 & 4 \\ 5 & 7 & 8 \end{pmatrix}.
+A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \;
+B = \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix} \;
+C = \begin{pmatrix} -1 & 2 \\ 3 & 0 \end{pmatrix} \;
+D = \begin{pmatrix} -1 & 2 \\ 3 & 4 \\ 0 & 6 \end{pmatrix} \;
+E = \begin{pmatrix} 1 & 2 & 4 \\ 5 & 7 & 8 \end{pmatrix}
 $$
 
 ---
 
 ### 1. **Matrix Additions and Subtractions**  
 $$
-A + B = \begin{pmatrix} 1+5 & 2+6 \\ 3+7 & 4+8 \end{pmatrix} = \begin{pmatrix} 6 & 8 \\ 10 & 12 \end{pmatrix}.
+A + B = \begin{pmatrix} 1+5 & 2+6 \\ 3+7 & 4+8 \end{pmatrix} = \begin{pmatrix} 6 & 8 \\ 10 & 12 \end{pmatrix}
 $$
 
 $$
-B - A = \begin{pmatrix} 5-1 & 6-2 \\ 7-3 & 8-4 \end{pmatrix} = \begin{pmatrix} 4 & 4 \\ 4 & 4 \end{pmatrix}.
+B - A = \begin{pmatrix} 5-1 & 6-2 \\ 7-3 & 8-4 \end{pmatrix} = \begin{pmatrix} 4 & 4 \\ 4 & 4 \end{pmatrix}
 $$
 
 $$
-A + C = \begin{pmatrix} 1+(-1) & 2+2 \\ 3+3 & 4+0 \end{pmatrix} = \begin{pmatrix} 0 & 4 \\ 6 & 4 \end{pmatrix}.
+A + C = \begin{pmatrix} 1+(-1) & 2+2 \\ 3+3 & 4+0 \end{pmatrix} = \begin{pmatrix} 0 & 4 \\ 6 & 4 \end{pmatrix}
 $$
 
 $$
