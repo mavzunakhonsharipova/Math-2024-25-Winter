@@ -5,7 +5,7 @@ Key characteristics of a matrix:
    - Example: A matrix with 2 rows and 3 columns is called a **2 × 3 matrix**.
    
 2. **Matrix notation**: Matrices are typically represented by uppercase letters, and individual elements are denoted by a lowercase letter with two subscripts: the first for the row and the second for the column.
-   - Example: The element at row \(i\) and column \(j\) of matrix \(A\) is denoted as $A_{ij}$.
+   - Example: The element at row $i$ and column $j$ of matrix $A$ is denoted as $A_{ij}$.
 
 3. **Types of matrices**:
    - **Square matrix**: A matrix where the number of rows equals the number of columns (e.g., 3 × 3).
@@ -35,4 +35,3 @@ $$
 
 In this case, the matrix \(A\) has two rows and two columns, with the elements 1, 2, 3, and 4.
 
-Would you like to know more about matrix operations or how matrices are used in specific fields?
