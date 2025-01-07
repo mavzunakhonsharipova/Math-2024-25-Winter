@@ -3084,6 +3084,7 @@ f^{-1}(x) = x + 1
 $
 ### Step 4: Display both functions on Geogebra
 To plot both functions on a Geogebra notebook, you can input the following commands:
+
 $$ 1. f(x) = x - 1 $$
 $$ 2. f^{-1}(x) = x + 1 $$
 
