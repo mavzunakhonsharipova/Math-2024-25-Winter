@@ -1871,8 +1871,7 @@ Thus, the coefficients are $x_1 = 3$, $x_2 = 3$, and $x_3 = -1$.
 So, the Cartesian coordinates of $\mathbf{v}$ in the new basis are:
 $$ [x_1, x_2, x_3] = [3, 3, -1] $$
 
-![alt text](image.png)
-
+![alt text](image-1.png)
 
 
 
