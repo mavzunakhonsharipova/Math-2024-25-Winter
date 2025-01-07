@@ -2576,117 +2576,515 @@ $$
 
 ## 16. Equations of planes in space
 
-* The plane passes through points $A(1, 2, 3)$, $B(3, 4, 5)$, and $C(2, 1, 4)$. Find the equation of the plane.
-* The plane passes through point $A(1, 2, 3)$ and is parallel to the plane $2x + 3y + 4z = 5$. Find the equation of the plane.
-* The plane passes through point $A(1, 2, 3)$ and is perpendicular to the normal vector $\mathbf{n} = [2, 3, 4]$. Find the equation of the plane.
-* We have two planes $2x + 3y + 4z = 5$ and $3x + 4y + 2z = 6$. Find the line of intersection of these planes.
-* Write the equation of the plane passing through point $A(1, 2, 3)$ and parallel to vectors $\vec{v_1} = [1, 0, 1]$ and $\vec{v_2} = [0, 1, -1]$.
-* We have the plane $2x + 3y + 4z = 5$. Find an example of a plane parallel and perpendicular to it.
-* We have the plane $2x + 3y + 4z = 5$ and point $A(1, 2, 3)$. Find the distance from point $A$ to this plane.
-* The plane intersects the coordinate axes at points $A(2, 0, 0)$, $B(0, 3, 0)$, and $C(0, 0, 4)$. Find the equation of the plane.
-* Calculate the angle between the plane $x + y + z = 1$ and the plane $x = 0$ (i.e., the $yz$ plane).
-* Find the vector perpendicular to the plane $x + y + z = 1$.
+1. The plane passes through points $A(1, 2, 3)$, $B(3, 4, 5)$, and $C(2, 1, 4)$. Find the equation of the plane.
+2. The plane passes through point $A(1, 2, 3)$ and is parallel to the plane $2x + 3y + 4z = 5$. Find the equation of the plane.
+3. The plane passes through point $A(1, 2, 3)$ and is perpendicular to the normal vector $\mathbf{n} = [2, 3, 4]$. Find the equation of the plane.
+4. We have two planes $2x + 3y + 4z = 5$ and $3x + 4y + 2z = 6$. Find the line of intersection of these planes.
+5. Write the equation of the plane passing through point $A(1, 2, 3)$ and parallel to vectors $\vec{v_1} = [1, 0, 1]$ and $\vec{v_2} = [0, 1, -1]$.
+6. We have the plane $2x + 3y + 4z = 5$. Find an example of a plane parallel and perpendicular to it.
+7. We have the plane $2x + 3y + 4z = 5$ and point $A(1, 2, 3)$. Find the distance from point $A$ to this plane.
+8. The plane intersects the coordinate axes at points $A(2, 0, 0)$, $B(0, 3, 0)$, and $C(0, 0, 4)$. Find the equation of the plane.
+9. Calculate the angle between the plane $x + y + z = 1$ and the plane $x = 0$ (i.e., the $yz$ plane).
+10. Find the vector perpendicular to the plane $x + y + z = 1$.
+
+# Solutions
+### Task 1. The plane passes through points $A(1, 2, 3)$, $B(3, 4, 5)$, and $C(2, 1, 4)$. Find the equation of the plane.
+
+To find the equation of a plane passing through three points A(1, 2, 3), B(3, 4, 5), and C(2, 1, 4), we proceed as follows:
+
+$$
+\text{Step 1: Find two vectors on the plane.}
+$$
+
+The two vectors on the plane are:
+$$
+\vec{AB} = \langle 3 - 1, 4 - 2, 5 - 3 \rangle = \langle 2, 2, 2 \rangle
+$$
+$$
+\vec{AC} = \langle 2 - 1, 1 - 2, 4 - 3 \rangle = \langle 1, -1, 1 \rangle
+$$
+
+$$
+\text{Step 2: Compute the normal vector to the plane.}
+$$
+
+The normal vector $ \vec{n} $ is the cross product of $ \vec{AB} $ and $ \vec{AC} $:
+$$
+\vec{n} = \vec{AB} \times \vec{AC}
+$$
+
+Using the determinant form for the cross product:
+$$
+\vec{n} = \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+2 & 2 & 2 \\
+1 & -1 & 1
+\end{vmatrix}
+$$
+
+Expanding the determinant:
+$$\vec{n} = \mathbf{i} \begin{vmatrix} 2 & 2 \\ -1 & 1 \end{vmatrix}
+- \mathbf{j} \begin{vmatrix} 2 & 2 \\ 1 & 1 \end{vmatrix}
++ \mathbf{k} \begin{vmatrix} 2 & 2 \\ 1 & -1 \end{vmatrix}$$
+Compute each minor:
+$$\vec{n} = \mathbf{i} \left( 2 \cdot 1 - 2 \cdot -1 \right)
+- \mathbf{j} \left( 2 \cdot 1 - 2 \cdot 1 \right)
++ \mathbf{k} \left( 2 \cdot -1 - 2 \cdot 1 \right)$$
+
+Simplify:
+$$\vec{n} = \mathbf{i}(2 + 2) - \mathbf{j}(2 - 2) + \mathbf{k}(-2 - 2)$$
+$$\vec{n} = \mathbf{i}(4) - \mathbf{j}(0) + \mathbf{k}(-4)$$
+$$\vec{n} = \langle 4, 0, -4 \rangle$$
+
+$$\text{Step 3: Write the equation of the plane.}$$
+The general equation of a plane is:
+$$
+n_1(x - x_1) + n_2(y - y_1) + n_3(z - z_1) = 0
+$$
+Here, $ \vec{n} = \langle 4, 0, -4 \rangle $ and A(1, 2, 3).
+
+Substitute the values:
+$$
+4(x - 1) + 0(y - 2) - 4(z - 3) = 0
+$$
+
+Simplify:
+$$4x - 4 - 4z + 12 = 0$$
+
+$$4x - 4z + 8 = 0$$
+$$x - z + 2 = 0$$
+$$\text{Final Answer: The equation of the plane is:}$$
+$$\boxed{x - z + 2 = 0}$$
+### Task 2: The plane passes through $A(1, 2, 3)$ and is parallel to $2x + 3y + 4z = 5$.
+
+The plane has the same normal vector, $[2, 3, 4]$. Using point-normal form:
+$$2(x - 1) + 3(y - 2) + 4(z - 3) = 0$$
+Simplify:
+$$2x + 3y + 4z - 20 = 0$$
+The equation is:
+$$\boxed{2x + 3y + 4z = 20}$$
+---
+### Task 3: The plane passes through $A(1, 2, 3)$ and is perpendicular to $\mathbf{n} = [2, 3, 4]$.
+
+Using point-normal form:
+$$2(x - 1) + 3(y - 2) + 4(z - 3) = 0$$
+Simplify:
+$$2x + 3y + 4z - 20 = 0$$
+The equation is:
+$$\boxed{2x + 3y + 4z = 20}$$
+---
+### Task 4: Line of intersection of $2x + 3y + 4z = 5$ and $3x + 4y + 2z = 6$.
+
+**Step 1:** Find direction vector by cross product of normals:
+$$
+\mathbf{n_1} = [2, 3, 4], \quad \mathbf{n_2} = [3, 4, 2]
+$$
+$$
+\mathbf{v} = \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+2 & 3 & 4 \\
+3 & 4 & 2
+\end{vmatrix} = [-10, 8, -1]
+$$
+**Step 2:** Find a point on the line. Set $z = 0$:
+$$
+2x + 3y = 5, \quad 3x + 4y = 6
+$$
+Solve: $x = -2$, $y = 3$.
+**Result:** Parametric equation of the line:
+$$
+x = -2 - 10t, \quad y = 3 + 8t, \quad z = -t
+$$
+The line is:
+$$
+\boxed{\mathbf{r}(t) = [-2 - 10t, 3 + 8t, -t]}
+$$
+---
+### Task 5: Plane passing through $A(1, 2, 3)$, parallel to $\vec{v_1} = [1, 0, 1]$ and $\vec{v_2} = [0, 1, -1]$.
+
+The normal vector is:
+$$
+\mathbf{n} = \vec{v_1} \times \vec{v_2} = [-1, -1, 1]
+$$
+
+Using point-normal form:
+$$
+-1(x - 1) - 1(y - 2) + 1(z - 3) = 0
+$$
+Simplify:
+$$
+-x - y + z = 0
+$$
+The equation is:
+$$
+\boxed{-x - y + z = 0}
+$$
+---
+### Task 6: Parallel and perpendicular planes to $2x + 3y + 4z = 5$.
+
+**Parallel plane:** Same normal vector:
+$$
+\boxed{2x + 3y + 4z = 10}
+$$
+
+**Perpendicular plane:** Normal vector orthogonal to $[2, 3, 4]$:
+$$
+3x - 2y = 0
+$$
+The perpendicular plane is:
+$$
+\boxed{3x - 2y = 0}
+$$
+
+---
+
+### Task 7: Distance from $A(1, 2, 3)$ to $2x + 3y + 4z = 5$.
+
+Use the formula:
+$$
+d = \frac{|2(1) + 3(2) + 4(3) - 5|}{\sqrt{2^2 + 3^2 + 4^2}}
+$$
+$$
+d = \frac{15}{\sqrt{29}}
+$$
+The distance is:
+$$
+\boxed{\frac{15}{\sqrt{29}}}
+$$
+
+---
+
+### Task 8: Plane intersects axes at $A(2, 0, 0)$, $B(0, 3, 0)$, $C(0, 0, 4)$.
+
+Equation of the plane:
+$$
+\frac{x}{2} + \frac{y}{3} + \frac{z}{4} = 1
+$$
+Simplify:
+$$
+6x + 4y + 3z = 12
+$$
+The equation is:
+$$
+\boxed{6x + 4y + 3z = 12}
+$$
+
+---
+
+### Task 9: Angle between $x + y + z = 1$ and $x = 0$ ($yz$ plane).
+
+Normals are:
+$$
+\mathbf{n_1} = [1, 1, 1], \quad \mathbf{n_2} = [1, 0, 0]
+$$
+The angle $\theta$ is:
+$$
+\cos\theta = \frac{\mathbf{n_1} \cdot \mathbf{n_2}}{|\mathbf{n_1}||\mathbf{n_2}|} = \frac{1}{\sqrt{3}}
+$$
+$$
+\theta = \arccos\left(\frac{1}{\sqrt{3}}\right)
+$$
+
+---
+
+### Task 10: Vector perpendicular to $x + y + z = 1$.
+
+The normal vector is:
+$$
+\boxed{[1, 1, 1]}
+$$
+----
+## 17. Equations of second-order surfaces
+
+* Write the equation of a sphere with center at point $P=(1,2,3)$ and radius $r=3$.
+* Do the spheres with equations $x^2 + y^2 + z^2 = 1$ and $x^2 + y^2 + z^2 = 2$ have any common points?
+* What curve in space is formed by the intersection of the sphere $x^2 + y^2 + z^2 = 1$ with the sphere $(x-1)^2 + y^2 + z^2 = 1$? Find the equation of this curve.
+* Write the equation of the tangent plane to the paraboloid $z=(x-1)^2+y^2+1$ at point $P(1,0,1)$.
 
 ## Solutions
-### 1. The plane passes through points A(1, 2, 3), B(3, 4, 5), and C(2, 1, 4). Find the equation of the plane.
+### Task 1: Write the equation of a sphere with center $P = (1, 2, 3)$ and radius $r = 3$.
 
-To find the equation of the plane passing through three points, we first need to find two vectors on the plane, which can be obtained from the points:
+The general equation of a sphere is:
+$$
+(x - x_0)^2 + (y - y_0)^2 + (z - z_0)^2 = r^2
+$$
+Substitute $P = (1, 2, 3)$ and $r = 3$:
+$$
+(x - 1)^2 + (y - 2)^2 + (z - 3)^2 = 9
+$$
+The equation is:
+$$
+\boxed{(x - 1)^2 + (y - 2)^2 + (z - 3)^2 = 9}
+$$
 
-**Vector AB** = B - A = (3-1, 4-2, 5-3) = (2, 2, 2)  
-**Vector AC** = C - A = (2-1, 1-2, 4-3) = (1, -1, 1)
+---
 
-Next, compute the cross product AB × AC to find the normal vector n:
+### Task 2: Do the spheres $x^2 + y^2 + z^2 = 1$ and $x^2 + y^2 + z^2 = 2$ have any common points?
 
-**Normal vector** n = AB × AC =  
-| i  j  k  |  
-| 2  2  2 |  
-| 1 -1  1 |  
+The centers of both spheres are at the origin $(0, 0, 0)$. The radii are $\sqrt{1} = 1$ and $\sqrt{2} \approx 1.41$, respectively. Since they share the same center but have different radii, the two spheres are concentric and do not intersect.
 
-This gives: n = (0, 0, -4)
+The spheres have:
+$$
+\boxed{\text{No common points.}}
+$$
 
-The equation of the plane is:
+---
 
-0(x - 1) + 0(y - 2) - 4(z - 3) = 0
+### Task 3: What curve is formed by the intersection of $x^2 + y^2 + z^2 = 1$ and $(x - 1)^2 + y^2 + z^2 = 1$?
+![alt text](image-8.png)
+**Step 1:** Expand the second sphere:
+$$
+(x - 1)^2 + y^2 + z^2 = 1 \implies x^2 - 2x + 1 + y^2 + z^2 = 1
+$$
+Simplify:
+$$
+x^2 + y^2 + z^2 - 2x = 0
+$$
 
-Simplifying gives:  
-z = 3
+**Step 2:** Subtract the first sphere $x^2 + y^2 + z^2 = 1$:
+$$
+(x^2 + y^2 + z^2 - 2x) - (x^2 + y^2 + z^2) = 0 - 1
+$$
+$$
+-2x = -1 \implies x = \frac{1}{2}
+$$
 
-Thus, the equation of the plane is:  
-**z = 3**
+**Step 3:** Substitute $x = \frac{1}{2}$ into $x^2 + y^2 + z^2 = 1$:
+$$
+\left(\frac{1}{2}\right)^2 + y^2 + z^2 = 1
+$$
+$$
+\frac{1}{4} + y^2 + z^2 = 1 \implies y^2 + z^2 = \frac{3}{4}
+$$
 
-### 2. The plane passes through point A(1, 2, 3) and is parallel to the plane 2x + 3y + 4z = 5. Find the equation of the plane.
+The intersection is a circle in the plane $x = \frac{1}{2}$ with radius $\sqrt{\frac{3}{4}} = \frac{\sqrt{3}}{2}$. The equation is:
+$$
+\boxed{x = \frac{1}{2}, \; y^2 + z^2 = \frac{3}{4}}
+$$
 
-Since the two planes are parallel, they share the same normal vector. The normal vector of the given plane is n = (2, 3, 4).
+---
 
-The equation of the plane passing through point A(1, 2, 3) is:
+### Task 4: Write the equation of the tangent plane to the paraboloid $z = (x - 1)^2 + y^2 + 1$ at $P(1, 0, 1)$.
+![alt text](image-9.png)
+**Step 1:** Compute the gradient of $z$ at $P(1, 0, 1)$. The equation is:
+$$
+z = (x - 1)^2 + y^2 + 1
+$$
+Partial derivatives:
+$$
+\frac{\partial z}{\partial x} = 2(x - 1), \quad \frac{\partial z}{\partial y} = 2y, \quad \frac{\partial z}{\partial z} = -1
+$$
 
-2(x - 1) + 3(y - 2) + 4(z - 3) = 0
+At $P(1, 0, 1)$:
+$$
+\frac{\partial z}{\partial x} = 2(1 - 1) = 0, \quad \frac{\partial z}{\partial y} = 2(0) = 0
+$$
 
-Expanding gives:  
-2x + 3y + 4z = 20
+**Step 2:** Tangent plane equation:
+$$
+z - z_0 = \frac{\partial z}{\partial x} (x - x_0) + \frac{\partial z}{\partial y} (y - y_0)
+$$
+At $P(1, 0, 1)$:
+$$
+z - 1 = 0(x - 1) + 0(y - 0)
+$$
+$$
+z = 1
+$$
+The tangent plane is:
+$$
+\boxed{z = 1}
+$$
+## 18. Functions
 
-Thus, the equation of the plane is:  
-**2x + 3y + 4z = 20**
+1. Draw in a single Geogebra notebook the following functions:
+   - $f(x) = x^2$
+   - $g(x) = \sqrt{x}$
+   - $h(x) = \frac{1}{x}$
+   - $j(x) = \sin(x)$
+Find value of all the above functions at $x = 2$.
 
-### 3. The plane passes through point A(1, 2, 3) and is perpendicular to the normal vector n = [2, 3, 4]. Find the equation of the plane.
+2. Let $f(x) = 3x - 1$ and $g(x) = \sqrt{x}$. Find:
+   - $f(g(x))$
+   - $g(f(x))$
+   - $f(f(x))$
+   - $g(g(x))$
 
-The normal vector for this plane is n = (2, 3, 4). Using the equation of the plane:
+and visualize functions in a single Geogebra notebook.
 
-2(x - 1) + 3(y - 2) + 4(z - 3) = 0
+3. Let $f(x) = e^x$ and $g(x) = \ln(x)$. Check: $f(g(x))$ and $g(f(x))$. What do you notice?
 
-Expanding gives:  
-2x + 3y + 4z = 20
+4. We have function $f=\{(1,7), (2,9), (3,11)\}$. Give inverse function $f^{-1}$.
 
-Thus, the equation of the plane is:  
-**2x + 3y + 4z = 20**
+5. We have function $f=\{(1,7), (2,7), (3,11)\}$. Give inverse function $f^{-1}$.
 
-### 4. We have two planes 2x + 3y + 4z = 5 and 3x + 4y + 2z = 6. Find the line of intersection of these planes.
+6. We have function $f(x)= x-1$. Give inverse function $f^{-1}$. Show both functions on the same Geogebra notebook.
+## Solutions
+### Task 1: Draw the functions 
+$f(x) = x^2, g(x) = √x, h(x) = 1/x, and 
+j(x) = sin(x) in a single Geogebra notebook and find their values at x = 2.
+![alt text](image-11.png)
 
-To find the line of intersection of two planes, solve the system of equations for two variables and express the third variable as a parameter.
+**Step 1:** Find the values of the functions at x = 2.
 
-From the system of equations:  
-2x + 3y + 4z = 5 (1)  
-3x + 4y + 2z = 6 (2)
+1. For f(x) = x^2:
+$$
+f(2) = 2^2 = 4
+$$
 
-Multiply equation (1) by 3 and equation (2) by 2 to align the coefficients of x:  
-6x + 9y + 12z = 15 (3)  
-6x + 8y + 4z = 12 (4)
+2. For g(x) = √x:
+$$
+g(2) = \sqrt{2} \approx 1.414
+$$
 
-Subtract equation (4) from equation (3):  
-y + 8z = 3 (5)
+3. For h(x) = 1/x:
+$$
+h(2) = \frac{1}{2} = 0.5
+$$
 
-Solve for y in terms of z:  
-y = 3 - 8z
+4. For j(x) = sin(x):
+$$
+j(2) = \sin(2) \approx 0.909
+$$
 
-Substitute y = 3 - 8z into equation (1):  
-2x + 3(3 - 8z) + 4z = 5
+**Result:**
+The values of the functions at x = 2 are:
+$$
+f(2) = 4, \quad g(2) \approx 1.414, \quad h(2) = 0.5, \quad j(2) \approx 0.909
+$$
 
-Simplify:  
-x = 10z - 2
+**Visualization:** You can plot all the functions f(x) = x^2, g(x) = √x, h(x) = 1/x, and j(x) = sin(x) on the same Geogebra notebook. Here is the input for each function:
 
-Thus, the parametric equations of the line of intersection are:  
-x = 10z - 2, y = 3 - 8z, z = z
+1. f(x) = x^2
+2. g(x) = √x
+3. h(x) = 1/x
+4. j(x) = sin(x)
 
-Alternatively, the parametric form is:  
-**(x, y, z) = (-2, 3, 0) + z(10, -8, 1)**
+These will appear as curves on the same graph, and you can check the values at x = 2 visually on the Geogebra interface.
+---
+### Task 2: Let f(x) = 3x - 1 and g(x) = √x. Find:
+   - f(g(x))
+   - g(f(x))
+   - f(f(x))
+   - g(g(x))
 
-### 5. Write the equation of the plane passing through point A(1, 2, 3) and parallel to vectors v1 = [1, 0, 1] and v2 = [0, 1, -1].
+![alt text](image-12.png)
+**Step 1:** Find the composite functions.
 
-The normal vector of the plane can be found by computing the cross product of v1 and v2:
+1. **For f(g(x)):**
+   $$ 
+   f(g(x)) = f(\sqrt{x}) = 3\sqrt{x} - 1
+   $$
 
-**Normal vector** n = v1 × v2 =  
-| i  j  k |  
-| 1  0  1 |  
-| 0  1 -1 |
+2. **For g(f(x)):**
+   $$ 
+   g(f(x)) = g(3x - 1) = \sqrt{3x - 1}
+   $$
 
-This gives: n = (-1, 1, 1)
+3. **For f(f(x)):**
+   $$ 
+   f(f(x)) = f(3x - 1) = 3(3x - 1) - 1 = 9x - 3 - 1 = 9x - 4
+   $$
 
-The equation of the plane passing through point A(1, 2, 3) is:
+4. **For g(g(x)):**
+   $$ 
+   g(g(x)) = g(\sqrt{x}) = \sqrt{\sqrt{x}} = x^{1/4}
+   $$
 
--1(x - 1) + 1(y - 2) + 1(z - 3) = 0
+**Result:**
+The composite functions are:
+$$f(g(x)) = 3\sqrt{x} - 1$$
+$$\quad g(f(x)) = \sqrt{3x - 1}$$
+$$\quad f(f(x)) = 9x - 4$$
+$$\quad g(g(x)) = x^{1/4}$$
 
-Expanding gives:  
--x + y + z = 4
+**Visualization:** You can plot all the functions $ f(x) = 3x - 1 $ $ g(x) = \sqrt{x} $ and their composite functions $ f(g(x)) $ $ g(f(x)) $ $ f(f(x)) $ and $ g(g(x)) $ on the same Geogebra notebook. Here is the input for each function:
+$$1. f(x) = 3x - 1$$
+$$2. g(x) = √x$$
+$$3. f(g(x)) = 3√x - 1$$
+$$4. g(f(x)) = √(3x - 1)$$
+$$5. f(f(x)) = 9x - 4$$
+$$6. g(g(x)) = x^(1/4)$$
 
-Thus, the equation of the plane is:  
-**-x + y + z = 4**
+#### These will appear as curves on the same graph, and you can visualize the relationships between the functions in Geogebra.
+---
+### Task 3 : Checking f(g(x)) and g(f(x))
+
+Let’s calculate $ f(g(x)) $ and $ g(f(x)) $ step by step for the given functions $ f(x) = e^x $ and $ g(x) = \ln(x) $.
+![alt text](image-13.png)
+### 1. **Calculating $ f(g(x)) $:**
+We are given:
+- $ f(x) = e^x $
+- $ g(x) = \ln(x) $
+
+Now, we compute $ f(g(x)) $:
+$$
+f(g(x)) = f(\ln(x)) = e^{\ln(x)}
+$$
+Using the property of logarithms and exponents, $ e^{\ln(x)} = x $, so:
+$$
+f(g(x)) = x
+$$
+
+### 2. **Calculating $ g(f(x)) $:**
+Now, we compute $ g(f(x)) $:
+$$
+g(f(x)) = g(e^x) = \ln(e^x)
+$$
+Using the property of logarithms, $ \ln(e^x) = x $, so:
+$$
+g(f(x)) = x
+$$
+
+### 3. **What do we notice?**
+Both $ f(g(x)) $ and $ g(f(x)) $ simplify to $ x $:
+- $ f(g(x)) = x $
+- $ g(f(x)) = x $
+
+This shows that the functions $ f(x) = e^x $ and $ g(x) = \ln(x) $ are inverses of each other. When you apply one function to the other (i.e., $ f(g(x)) $ or $ g(f(x)) $), you get back $ x $, which is the identity function.
+
+Thus, we notice that:
+$$
+f(g(x)) = x \quad \text{and} \quad g(f(x)) = x
+$$
+This is the characteristic property of inverse functions.
+
+
+### Task 4: Finding the inverse of 
+$$f = (1, 7), (2, 9), (3, 11)$$
+
+Swap x and f(x):
+
+The inverse of f = (1, 7), (2, 9), (3, 11) is f^(-1) = (7, 1), (9, 2), (11, 3).
+
+**Inverse**:   
+$$f^(-1) = (7, 1), (9, 2), (11, 3)$$
+---
+
+### Task 5: Finding the inverse of 
+$$f = (1, 7), (2, 7), (3, 11)$$
+
+Since 7 maps to both 1 and 2, the function is not one-to-one and does not have an inverse.
+
+The inverse of f = (1, 7), (2, 7), (3, 11) does not exist.
+### Task 6: Express the function equation
+### Step 1: $f(x) = x - 1$
+
+### Step 2: Swap $ f(x) $ and $ x $
+To find the inverse function, we swap $ f(x) $ and $ x $. Let $ y = f(x) $ so:
+$y = x - 1$
+Now, swap $ x $ and $ y $:
+$x = y - 1 $
+### Step 3: Solve for $ y $
+To solve for $ y $ add 1 to both sides:
+$y = x + 1$
+Thus, the inverse function is:
+$
+f^{-1}(x) = x + 1
+$
+### Step 4: Display both functions on Geogebra
+To plot both functions on a Geogebra notebook, you can input the following commands:
+1. $$ f(x) = x - 1 $$
+2. $$ f^{-1}(x) = x + 1 $$
+
+You will be able to see both functions on the same graph, and ideally, the graph of the inverse will reflect across the line $ y = x $
