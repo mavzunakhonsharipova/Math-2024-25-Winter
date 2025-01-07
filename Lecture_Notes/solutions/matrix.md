@@ -1870,16 +1870,823 @@ Thus, the coefficients are $x_1 = 3$, $x_2 = 3$, and $x_3 = -1$.
 
 So, the Cartesian coordinates of $\mathbf{v}$ in the new basis are:
 $$ [x_1, x_2, x_3] = [3, 3, -1] $$
-
 ![alt text](image-1.png)
+---
+## 12. Vectors II
+
+1. Perform the addition of vector $[2, 1]$ to vector $[-1, 1]$. Plot both vectors and their sum on a graph.
+
+2. Calculate the area of the triangle spanned by vectors $[2, 1, 2]$ and $[-1, 1,1]$.
+
+3. Calculate the volume of the parallelepiped spanned by vectors $[2, 1, -1]$, $[-1, 1, 0]$, and $[1, 2, 1]$.
+
+4. Check if vectors $[2, 1]$ and $[-1, 1]$ are perpendicular.
+
+5. Calculate the angle in degrees between vectors $[4,2,1]$ and $[1,3,2]$.
+
+6. For three-dimensional vectors: $\mathbf{a}=[a_x, a_y, a_z]$, $\mathbf{b}=[b_x, b_y, b_z]$, $\mathbf{c}=[c_x, c_y, c_z]$, prove that the following identity is satisfied:
+
+$$
+\mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c}) \mathbf{b} - (\mathbf{a} \cdot \mathbf{b}) \mathbf{c}.
+$$
+
+## Solutions
+
+---
+### 1. Perform the addition of vector $ [2, 1] $ to vector $ [-1, 1] $. Plot both vectors and their sum on a graph.
+
+#### Solution:
+To perform the addition of the two vectors:
+$$
+[2, 1] + [-1, 1] = [2 - 1, 1 + 1] = [1, 2].
+$$
+
+#### Vectors:
+- **Vector 1 $ [2, 1] $**: Starts at the origin $(0, 0)$ and ends at point $ (2, 1) $.
+- **Vector 2 $ [-1, 1] $**: Starts at the origin $(0, 0)$ and ends at point $ (-1, 1) $.
+- **Sum of Vectors $ [1, 2] $**: Starts at the origin $(0, 0)$ and ends at point $ (1, 2) $.
+
+---
+
+#### Graph:
+Below is the plot of the two vectors and their sum:
+
+- **Blue vector**: Represents $ [2, 1] $.
+- **Red vector**: Represents $ [-1, 1] $.
+- **Green vector**: Represents their sum $ [1, 2] $.
+
+---
 
 
+### 2. Calculate the area of the triangle spanned by vectors 
+**[2, 1, 2]** and **[-1, 1, 1]**.
 
+#### Solution:
+The area of the triangle is half the magnitude of the cross product of the two vectors:
+$$
+\text{Area} = \frac{1}{2} || \mathbf{a} \times \mathbf{b} ||.
+$$
+Vectors:
+$$
+\mathbf{a} = [2, 1, 2], \quad \mathbf{b} = [-1, 1, 1].
+$$
+Cross product:
+$$
+\mathbf{a} \times \mathbf{b} = 
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+2 & 1 & 2 \\
+-1 & 1 & 1
+\end{vmatrix}
+= \mathbf{i}(1 \cdot 1 - 2 \cdot 1) - \mathbf{j}(2 \cdot 1 - (-1) \cdot 2) + \mathbf{k}(2 \cdot 1 - (-1) \cdot 1).
+$$
+Simplify:
+$$
+\mathbf{a} \times \mathbf{b} = [-1, -4, 3].
+$$
+Magnitude:
+$$
+||\mathbf{a} \times \mathbf{b}|| = \sqrt{(-1)^2 + (-4)^2 + 3^2} = \sqrt{1 + 16 + 9} = \sqrt{26}.
+$$
+Area:
+$$
+\text{Area} = \frac{1}{2} \sqrt{26}.
+$$
 
+---
 
+### 3. Calculate the volume of the parallelepiped spanned by vectors **[2, 1, -1]**, **[-1, 1, 0]**, and **[1, 2, 1]**.
 
+#### Solution:
+The volume is the absolute value of the scalar triple product:
+$$
+\text{Volume} = |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})|.
+$$
+Vectors:
+$$
+\mathbf{a} = [2, 1, -1], \quad \mathbf{b} = [-1, 1, 0], \quad \mathbf{c} = [1, 2, 1].
+$$
+Cross product:
+$$
+\mathbf{b} \times \mathbf{c} = 
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+-1 & 1 & 0 \\
+1 & 2 & 1
+\end{vmatrix}
+= \mathbf{i}(1 \cdot 1 - 0 \cdot 2) - \mathbf{j}((-1) \cdot 1 - 0 \cdot 1) + \mathbf{k}((-1) \cdot 2 - 1 \cdot 1).
+$$
+Simplify:
+$$
+\mathbf{b} \times \mathbf{c} = [1, -1, -3].
+$$
+Dot product:
+$$
+\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = [2, 1, -1] \cdot [1, -1, -3] = (2 \cdot 1) + (1 \cdot -1) + (-1 \cdot -3).
+$$
+Simplify:
+$$
+\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = 2 - 1 + 3 = 4.
+$$
+Volume:
+$$
+\text{Volume} = |4| = 4.
+$$
 
+---
 
+### 4. Check if vectors **[2, 1]** and **[-1, 1]** are perpendicular.
 
+#### Solution:
+Two vectors are perpendicular if their dot product is zero:
+$$
+\mathbf{a} \cdot \mathbf{b} = [2, 1] \cdot [-1, 1] = (2 \cdot -1) + (1 \cdot 1) = -2 + 1 = -1.
+$$
+Since the dot product is not zero, the vectors are **not perpendicular**.
 
+---
 
+### 5. Calculate the angle in degrees between vectors **[4, 2, 1]** and **[1, 3, 2]**.
+
+#### Solution:
+The angle is given by:
+$$
+\cos\theta = \frac{\mathbf{a} \cdot \mathbf{b}}{||\mathbf{a}|| \cdot ||\mathbf{b}||}.
+$$
+Vectors:
+$$
+\mathbf{a} = [4, 2, 1], \quad \mathbf{b} = [1, 3, 2].
+$$
+Dot product:
+$$
+\mathbf{a} \cdot \mathbf{b} = (4 \cdot 1) + (2 \cdot 3) + (1 \cdot 2) = 4 + 6 + 2 = 12.
+$$
+Magnitudes:
+$$
+||\mathbf{a}|| = \sqrt{4^2 + 2^2 + 1^2} = \sqrt{16 + 4 + 1} = \sqrt{21},
+$$
+$$
+||\mathbf{b}|| = \sqrt{1^2 + 3^2 + 2^2} = \sqrt{1 + 9 + 4} = \sqrt{14}.
+$$
+Cosine:
+$$
+\cos\theta = \frac{12}{\sqrt{21} \cdot \sqrt{14}} = \frac{12}{\sqrt{294}}.
+$$
+Angle:
+$$
+\theta = \cos^{-1}\left(\frac{12}{\sqrt{294}}\right).
+$$
+Convert to degrees:
+$$
+\theta \approx 46.6^\circ.
+$$
+
+---
+
+### 6. Prove the identity:
+For vectors:
+$$
+\mathbf{a} = [a_x, a_y, a_z], \quad \mathbf{b} = [b_x, b_y, b_z], \quad \mathbf{c} = [c_x, c_y, c_z],
+$$
+prove that:
+$$
+\mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c})\mathbf{b} - (\mathbf{a} \cdot \mathbf{b})\mathbf{c}.
+$$
+
+#### Proof:
+The vector triple product identity states:
+$$
+\mathbf{a} \times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \cdot \mathbf{c})\mathbf{b} - (\mathbf{a} \cdot \mathbf{b})\mathbf{c}.
+$$
+Using the distributive and scalar product rules, we can expand:
+1. The left-hand side computes the cross product between **a** and the result of **b × c**.
+2. The right-hand side directly uses scalar products to form a linear combination of **b** and **c**.
+
+This proof can be verified by expanding both sides and confirming equality using the properties of the cross product and dot product.
+
+## 13. Vectors III
+
+1. Divide the line segment connecting points $A(-1, 2)$ and $B(3, -2)$ in the ratio $1:3$. Illustrate the result on a graph.
+
+2. Project vector $\mathbf{a} = (3, 4)$ onto the $OX$ and $OY$ axes. Illustrate the result on a graph.
+
+3. Project vector $\mathbf{a} = (2,3)$ onto vector $\mathbf{b} = (1, 1)$. Ilustrate the result on a graph.
+
+4. Project vector $\mathbf{b} = (1, 1)$ onto vector $\mathbf{a} = (2, 3)$. Ilustrate the result on a graph.
+
+## Solutions
+
+### 1. Divide the line segment connecting points $ A(-1, 2) $ and $ B(3, -2) $ in the ratio $ 1:3 $.
+
+The formula to divide the line segment joining two points $ A(x_1, y_1) $ and $ B(x_2, y_2) $ in the ratio $ m:n $ is:
+
+$$
+P = \left( \frac{m x_2 + n x_1}{m + n}, \frac{m y_2 + n y_1}{m + n} \right)
+$$
+
+For $ A(-1, 2) $, $ B(3, -2) $, and the ratio $ 1:3 $, we have $ m = 1 $ and $ n = 3 $. Substituting the values:
+
+$$
+P = \left( \frac{1 \cdot 3 + 3 \cdot (-1)}{1 + 3}, \frac{1 \cdot (-2) + 3 \cdot 2}{1 + 3} \right)
+$$
+
+Simplifying:
+
+$$
+P = \left( \frac{3 - 3}{4}, \frac{-2 + 6}{4} \right) = \left( \frac{0}{4}, \frac{4}{4} \right) = (0, 1)
+$$
+
+Thus, the point dividing the line segment in the ratio $ 1:3 $ is $ P(0, 1) $.
+
+---
+
+### 2. Project vector $ \mathbf{a} = (3, 4) $ onto the $ OX $ and $ OY $ axes.
+
+The projection of a vector $ \mathbf{a} = (a_x, a_y) $ onto the $ OX $-axis is simply the vector $ (a_x, 0) $, and the projection onto the $ OY $-axis is $ (0, a_y) $.
+
+For $ \mathbf{a} = (3, 4) $, we get:
+
+- Projection onto $ OX $-axis: 
+  $$
+  \text{Proj}_{OX}(\mathbf{a}) = (3, 0)
+  $$
+
+- Projection onto $ OY $-axis:
+  $$
+  \text{Proj}_{OY}(\mathbf{a}) = (0, 4)
+  $$
+
+---
+
+### 3. Project vector $ \mathbf{a} = (2, 3) $ onto vector $ \mathbf{b} = (1, 1) $.
+
+![alt text](image-2.png)
+
+The formula to project vector $ \mathbf{a} $ onto vector $ \mathbf{b} $ is:
+
+$$
+\text{Proj}_{\mathbf{b}}(\mathbf{a}) = \frac{\mathbf{a} \cdot \mathbf{b}}{\mathbf{b} \cdot \mathbf{b}} \mathbf{b}
+$$
+
+First, compute the dot products:
+
+$$
+\mathbf{a} \cdot \mathbf{b} = 2 \cdot 1 + 3 \cdot 1 = 5
+$$
+
+$$
+\mathbf{b} \cdot \mathbf{b} = 1 \cdot 1 + 1 \cdot 1 = 2
+$$
+
+Now, compute the projection:
+
+$$
+\text{Proj}_{\mathbf{b}}(\mathbf{a}) = \frac{5}{2} \cdot (1, 1) = \left( \frac{5}{2}, \frac{5}{2} \right)
+$$
+
+So, the projection of $ \mathbf{a} $ onto $ \mathbf{b} $ is $ \left( \frac{5}{2}, \frac{5}{2} \right) $.
+
+---
+
+### 4. Project vector $ \mathbf{b} = (1, 1) $ onto vector $ \mathbf{a} = (2, 3) $.
+
+Using the same projection formula as above:
+
+$$
+\text{Proj}_{\mathbf{a}}(\mathbf{b}) = \frac{\mathbf{b} \cdot \mathbf{a}}{\mathbf{a} \cdot \mathbf{a}} \mathbf{a}
+$$
+
+First, compute the dot products:
+
+$$
+\mathbf{b} \cdot \mathbf{a} = 1 \cdot 2 + 1 \cdot 3 = 5
+$$
+
+$$
+\mathbf{a} \cdot \mathbf{a} = 2 \cdot 2 + 3 \cdot 3 = 13
+$$
+
+Now, compute the projection:
+
+$$
+\text{Proj}_{\mathbf{a}}(\mathbf{b}) = \frac{5}{13} \cdot (2, 3) = \left( \frac{10}{13}, \frac{15}{13} \right)
+$$
+
+Thus, the projection of $ \mathbf{b} $ onto $ \mathbf{a} $ is $ \left( \frac{10}{13}, \frac{15}{13} \right) $.
+
+## 14. Equations of lines on a plane
+
+* The line passes through points $A(1, 2)$ and $B(3, 4)$. Find the equation of the line.
+* The line passes through point $A(1, 2)$ and is parallel to the line $y = 2x + 3$. Find the equation of the line.
+* The line passes through point $A(1, 2)$ and is perpendicular to the line $y = 2x + 3$. Find the equation of the line.
+* We have two lines $y = 2x + 3$ and $y = 3x + 2$. Find the intersection point of these lines and calculate the angle between them.
+* Write the equation of the line passing through point $A(1, 2)$ and parallel to the vector $\mathbf{v} = [2, 3]$.
+* We have the line $y = 2x + 3$. Find an example of a line perpendicular and parallel to it.
+* We have the line $y = 2x + 3$ and point $A(1, 2)$. Find the distance from point $A$ to the line.
+* The line intersects the coordinate axes at points $A(2, 0)$ and $B(0, 3)$. Find the equation of the line.
+* Calculate the angle between the line $y = x + 3$ and the $Ox$ axis.
+* Provide a vector perpendicular to the line $x + y + 1 = 0$.
+
+## Solutions
+### 1. The line passes through points  A(1, 2) $ and  B(3, 4) $. Find the equation of the line.
+To find the equation of the line passing through two points  A(x_1, y_1) $ and  B(x_2, y_2) $, we first calculate the slope  m $:
+$$
+m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{4 - 2}{3 - 1} = \frac{2}{2} = 1
+$$
+![alt text](image-5.png)
+Now, use the point-slope form of the line equation:
+$$
+y - y_1 = m(x - x_1)
+$$
+Substitute  A(1, 2) $ and  m = 1 $:
+$$
+y - 2 = 1(x - 1)
+$$
+Simplify:
+$$
+y = x + 1
+$$
+Thus, the equation of the line is:
+$$
+y = x + 1
+$$
+---
+
+### 2. The line passes through point  A(1, 2) $ and is parallel to the line  y = 2x + 3 $. Find the equation of the line.
+
+Since the lines are parallel, they have the same slope. The slope of the line  y = 2x + 3 $ is 2. Using the point-slope form of the line equation:
+
+$$
+y - y_1 = m(x - x_1)
+$$
+![](image-6.png)
+Substitute  A(1, 2) $ and  m = 2 $:
+$$
+y - 2 = 2(x - 1)
+$$
+
+Simplify:
+
+$$
+y = 2x
+$$
+
+Thus, the equation of the line is:
+
+$$
+y = 2x
+$$
+
+---
+
+### 3. The line passes through point  A(1, 2) $ and is perpendicular to the line  y = 2x + 3 $. Find the equation of the line.
+
+The slope of the line  y = 2x + 3 $ is 2. The slope of a line perpendicular to this one is the negative reciprocal of 2, which is  -\frac{1}{2} $. Using the point-slope form:
+
+$$
+y - y_1 = m(x - x_1)
+$$
+
+Substitute  A(1, 2) $ and  m = -\frac{1}{2} $:
+
+$$
+y - 2 = -\frac{1}{2}(x - 1)
+$$
+
+Simplify:
+
+$$
+y = -\frac{1}{2}x + \frac{5}{2}
+$$
+
+Thus, the equation of the line is:
+
+$$
+y = -\frac{1}{2}x + \frac{5}{2}
+$$
+
+---
+
+### 4. We have two lines  y = 2x + 3 $ and  y = 3x + 2 $. Find the intersection point of these lines and calculate the angle between them.
+
+To find the intersection point, set the equations equal to each other:
+
+$$
+2x + 3 = 3x + 2
+$$
+
+Solve for  x $:
+
+$$
+2x - 3x = 2 - 3 \quad \Rightarrow \quad -x = -1 \quad \Rightarrow \quad x = 1
+$$
+
+Substitute  x = 1 $ into one of the equations (e.g.,  y = 2x + 3 $):
+
+$$
+y = 2(1) + 3 = 5
+$$
+
+Thus, the intersection point is  (1, 5) $.
+
+To calculate the angle between the two lines, use the formula for the angle  \theta $ between two lines with slopes  m_1 $ and  m_2 $:
+
+$$
+\tan(\theta) = \left| \frac{m_1 - m_2}{1 + m_1 m_2} \right|
+$$
+
+Substitute  m_1 = 2 $ and  m_2 = 3 $:
+
+$$
+\tan(\theta) = \left| \frac{2 - 3}{1 + 2 \times 3} \right| = \left| \frac{-1}{7} \right| = \frac{1}{7}
+$$
+
+Thus,
+
+$$
+\theta = \tan^{-1}\left(\frac{1}{7}\right) \approx 8.13^\circ
+$$
+
+---
+
+### 5. Write the equation of the line passing through point  A(1, 2) $ and parallel to the vector  \mathbf{v} = [2, 3] $.
+
+The direction of the line is the same as the vector  \mathbf{v} = [2, 3] $. The slope of the line is the ratio of the components of the vector:
+
+$$
+m = \frac{3}{2}
+$$
+
+Using the point-slope form of the line equation:
+
+$$
+y - y_1 = m(x - x_1)
+$$
+
+Substitute  A(1, 2) $ and  m = \frac{3}{2} $:
+
+$$
+y - 2 = \frac{3}{2}(x - 1)
+$$
+
+Simplify:
+
+$$
+y = \frac{3}{2}x + \frac{1}{2}
+$$
+
+Thus, the equation of the line is:
+
+$$
+y = \frac{3}{2}x + \frac{1}{2}
+$$
+
+---
+
+### 6. We have the line  y = 2x + 3 $. Find an example of a line perpendicular and parallel to it.
+
+- A line **parallel** to  y = 2x + 3 $ has the same slope, which is 2. For example, the line  y = 2x - 4 $ is parallel to it.
+- A line **perpendicular** to  y = 2x + 3 $ has a slope of  -\frac{1}{2} $, the negative reciprocal of 2. For example, the line  y = -\frac{1}{2}x + 1 $ is perpendicular to it.
+
+---
+
+### 7. We have the line  y = 2x + 3 $ and point  A(1, 2) $. Find the distance from point  A $ to the line.
+
+The formula for the distance from a point  (x_0, y_0) $ to a line  Ax + By + C = 0 $ is:
+
+$$
+d = \frac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}}
+$$
+
+First, rewrite the equation  y = 2x + 3 $ in standard form:
+
+$$
+2x - y + 3 = 0
+$$
+
+Substitute  A = 2 $,  B = -1 $,  C = 3 $, and  (x_0, y_0) = (1, 2) $:
+
+$$
+d = \frac{|2(1) - 1(2) + 3|}{\sqrt{2^2 + (-1)^2}} = \frac{|2 - 2 + 3|}{\sqrt{4 + 1}} = \frac{3}{\sqrt{5}} \approx 1.34
+$$
+
+Thus, the distance from point  A $ to the line is approximately 1.34 units.
+
+---
+
+### 8. The line intersects the coordinate axes at points  A(2, 0) $ and  B(0, 3) $. Find the equation of the line.
+
+The slope of the line passing through points  A(2, 0) $ and  B(0, 3) $ is:
+
+$$
+m = \frac{3 - 0}{0 - 2} = \frac{3}{-2} = -\frac{3}{2}
+$$
+
+Using the point-slope form with point  A(2, 0) $:
+$$
+y - 0 = -\frac{3}{2}(x - 2)
+$$
+Simplify:
+$$
+y = -\frac{3}{2}x + 3
+$$
+Thus, the equation of the line is:
+$$
+y = -\frac{3}{2}x + 3
+$$
+---
+### 9. Calculate the angle between the line  y = x + 3 $ and the  Ox $-axis.
+
+The slope of the line is 1. The angle  \theta $ between the line and the  Ox $-axis is given by:
+$$
+\tan(\theta) = |m| = 1
+$$
+Thus,
+$$
+\theta = \tan^{-1}(1) = 45^\circ
+$$
+---
+### 10. Provide a vector perpendicular to the line  x + y + 1 = 0 $.
+The equation of the line is in the form  Ax + By + C = 0 $, where  A = 1 $ and  B = 1 $. A vector perpendicular to the line is given by  \mathbf{v} = [A, B] $. Therefore, a vector perpendicular to the line is:
+$$
+\mathbf{v} = [1, 1]
+$$
+
+## 15. Equations of second-order curves (conic sections)
+
+* Find the equation of a circle with center at point $A(1,2)$ and radius $r=3$.
+* Find the equation of a parabola intersecting the $Ox$ axis at points $x=2$, $x=4$, and passing through point $y(3)=1$.
+* Find the center of the ellipse with the equation $x^2 + 4y^2 - 4x - 16y + 16 = 0$.
+* Find the slope ($m>0$) of the line $y=mx-5$ that is tangent to the circle with the equation $x^2 + y^2=1$.
+* Find the intersection points of the hyperbola $x^2 - y^2 = 1$ with the ellipse's line $x^2 + 4y^2 = 6$.
+* For the given hyperbola $x^2 - y^2 = 1$, find the distance between its branches.
+## Solutions
+### 1. Find the equation of a circle with center at point  A(1,2) $ and radius  r=3 $.
+The general equation of a circle with center  (h, k) $ and radius  r $ is:
+$$
+(x - h)^2 + (y - k)^2 = r^2
+$$
+Substitute  h = 1 $,  k = 2 $, and  r = 3 $:
+$$
+(x - 1)^2 + (y - 2)^2 = 3^2
+$$
+Simplifying:
+$$
+(x - 1)^2 + (y - 2)^2 = 9
+$$
+Thus, the equation of the circle is:
+$$
+(x - 1)^2 + (y - 2)^2 = 9
+$$
+### 2. Find the equation of a parabola intersecting the  Ox $-axis at points  x=2 $,  x=4 $, and passing through point  y(3)=1 $.
+The general equation of a parabola that intersects the  Ox $-axis at  x_1 $ and  x_2 $ is:
+$$
+y = a(x - x_1)(x - x_2)
+$$
+Here, the parabola intersects the  Ox $-axis at  x = 2 $ and  x = 4 $, so  x_1 = 2 $ and  x_2 = 4 $. Now, substitute these values into the equation:
+$$
+y = a(x - 2)(x - 4)
+$$
+We are also given that the point  (3, 1) $ lies on the parabola, so substitute  x = 3 $ and  y = 1 $ into the equation:
+$$
+1 = a(3 - 2)(3 - 4)
+$$
+Simplify:
+$$
+1 = a(1)(-1) \quad \Rightarrow \quad a = -1
+$$
+Thus, the equation of the parabola is:
+$$
+y = -(x - 2)(x - 4)
+$$
+Expanding the equation:
+$$
+y = -(x^2 - 6x + 8) = -x^2 + 6x - 8
+$$
+Thus, the equation of the parabola is:
+$$
+y = -x^2 + 6x - 8
+$$
+### 3. Find the center of the ellipse with the equation  x^2 + 4y^2 - 4x - 16y + 16 = 0 $.
+To find the center of the ellipse, we rewrite the equation in standard form by completing the square.
+Start with the given equation:
+$$
+x^2 + 4y^2 - 4x - 16y + 16 = 0
+$$
+Group the  x $-terms and the  y $-terms:
+$$
+(x^2 - 4x) + 4(y^2 - 4y) + 16 = 0
+$$
+Complete the square for the  x $-terms:
+$$
+x^2 - 4x = (x - 2)^2 - 4
+$$
+Complete the square for the  y $-terms:
+$$
+y^2 - 4y = (y - 2)^2 - 4
+$$
+Now substitute these into the equation:
+$$
+(x - 2)^2 - 4 + 4((y - 2)^2 - 4) + 16 = 0
+$$
+Simplify:
+$$
+(x - 2)^2 + 4(y - 2)^2 - 4 - 16 + 16 = 0
+$$
+This simplifies to:
+$$
+(x - 2)^2 + 4(y - 2)^2 = 4
+$$
+Thus, the center of the ellipse is at  (2, 2) $.
+### 4. Find the slope  m > 0 $ of the line  y = mx - 5 $ that is tangent to the circle with the equation  x^2 + y^2 = 1 $.
+The equation of the circle is  x^2 + y^2 = 1 $, which has its center at  (0, 0) $ and radius 1.
+The equation of the line is  y = mx - 5 $. The line will be tangent to the circle when the distance from the center of the circle  (0, 0) $ to the line is equal to the radius of the circle (which is 1).
+The distance from a point  (x_0, y_0) $ to the line  Ax + By + C = 0 $ is given by:
+$$
+d = \frac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}}
+$$
+First, rewrite the line equation  y = mx - 5 $ in standard form:
+$$
+mx - y - 5 = 0
+$$
+Now, apply the distance formula:
+$$
+d = \frac{|m(0) - (0) - 5|}{\sqrt{m^2 + (-1)^2}} = \frac{|-5|}{\sqrt{m^2 + 1}}
+$$
+Set the distance equal to the radius of the circle (which is 1):
+$$
+\frac{5}{\sqrt{m^2 + 1}} = 1
+$$
+Solve for  m $:
+$$
+5 = \sqrt{m^2 + 1}
+$$
+Square both sides:
+$$
+25 = m^2 + 1
+$$
+Solve for  m^2 $:
+$$
+m^2 = 24 \quad \Rightarrow \quad m = \sqrt{24} = 2\sqrt{6}
+$$
+Thus, the slope of the tangent line is:
+$$
+m = 2\sqrt{6}
+$$
+### 5. Find the intersection points of the hyperbola  x^2 - y^2 = 1 $ with the ellipse's line  x^2 + 4y^2 = 6 $.
+To find the intersection points, solve the system of equations:
+1.  x^2 - y^2 = 1 $
+2.  x^2 + 4y^2 = 6 $
+From the first equation, solve for  x^2 $:
+$$
+x^2 = y^2 + 1
+$$
+Substitute this into the second equation:
+$$
+(y^2 + 1) + 4y^2 = 6
+$$
+Simplify:
+$$
+5y^2 + 1 = 6
+$$
+$$
+5y^2 = 5 \quad \Rightarrow \quad y^2 = 1
+$$
+Thus,  y = \pm 1 $.
+Substitute  y = 1 $ into  x^2 = y^2 + 1 $:
+$$
+x^2 = 1 + 1 = 2 \quad \Rightarrow \quad x = \pm \sqrt{2}
+$$
+So, the intersection points are  (\sqrt{2}, 1) $ and  (-\sqrt{2}, 1) $.
+Similarly, substitute  y = -1 $ into  x^2 = y^2 + 1 $:
+$$
+x^2 = 1 + 1 = 2 \quad \Rightarrow \quad x = \pm \sqrt{2}
+$$
+Thus, the intersection points are  (\sqrt{2}, -1) $ and  (-\sqrt{2}, -1) $.
+The intersection points of the hyperbola and the ellipse are:
+$$
+(\sqrt{2}, 1), (-\sqrt{2}, 1), (\sqrt{2}, -1), (-\sqrt{2}, -1)
+$$
+### 6. For the given hyperbola  x^2 - y^2 = 1 $, find the distance between its branches.
+The branches of the hyperbola  x^2 - y^2 = 1 $ are located on the  x $-axis. The distance between the branches is the distance between the two vertices on the  x $-axis, which occur at  x = \pm 1 $.
+Thus, the distance between the branches is:
+$$
+2 \times 1 = 2
+$$
+
+## 16. Equations of planes in space
+
+* The plane passes through points $A(1, 2, 3)$, $B(3, 4, 5)$, and $C(2, 1, 4)$. Find the equation of the plane.
+* The plane passes through point $A(1, 2, 3)$ and is parallel to the plane $2x + 3y + 4z = 5$. Find the equation of the plane.
+* The plane passes through point $A(1, 2, 3)$ and is perpendicular to the normal vector $\mathbf{n} = [2, 3, 4]$. Find the equation of the plane.
+* We have two planes $2x + 3y + 4z = 5$ and $3x + 4y + 2z = 6$. Find the line of intersection of these planes.
+* Write the equation of the plane passing through point $A(1, 2, 3)$ and parallel to vectors $\vec{v_1} = [1, 0, 1]$ and $\vec{v_2} = [0, 1, -1]$.
+* We have the plane $2x + 3y + 4z = 5$. Find an example of a plane parallel and perpendicular to it.
+* We have the plane $2x + 3y + 4z = 5$ and point $A(1, 2, 3)$. Find the distance from point $A$ to this plane.
+* The plane intersects the coordinate axes at points $A(2, 0, 0)$, $B(0, 3, 0)$, and $C(0, 0, 4)$. Find the equation of the plane.
+* Calculate the angle between the plane $x + y + z = 1$ and the plane $x = 0$ (i.e., the $yz$ plane).
+* Find the vector perpendicular to the plane $x + y + z = 1$.
+
+## Solutions
+### 1. The plane passes through points A(1, 2, 3), B(3, 4, 5), and C(2, 1, 4). Find the equation of the plane.
+
+To find the equation of the plane passing through three points, we first need to find two vectors on the plane, which can be obtained from the points:
+
+**Vector AB** = B - A = (3-1, 4-2, 5-3) = (2, 2, 2)  
+**Vector AC** = C - A = (2-1, 1-2, 4-3) = (1, -1, 1)
+
+Next, compute the cross product AB × AC to find the normal vector n:
+
+**Normal vector** n = AB × AC =  
+| i  j  k  |  
+| 2  2  2 |  
+| 1 -1  1 |  
+
+This gives: n = (0, 0, -4)
+
+The equation of the plane is:
+
+0(x - 1) + 0(y - 2) - 4(z - 3) = 0
+
+Simplifying gives:  
+z = 3
+
+Thus, the equation of the plane is:  
+**z = 3**
+
+### 2. The plane passes through point A(1, 2, 3) and is parallel to the plane 2x + 3y + 4z = 5. Find the equation of the plane.
+
+Since the two planes are parallel, they share the same normal vector. The normal vector of the given plane is n = (2, 3, 4).
+
+The equation of the plane passing through point A(1, 2, 3) is:
+
+2(x - 1) + 3(y - 2) + 4(z - 3) = 0
+
+Expanding gives:  
+2x + 3y + 4z = 20
+
+Thus, the equation of the plane is:  
+**2x + 3y + 4z = 20**
+
+### 3. The plane passes through point A(1, 2, 3) and is perpendicular to the normal vector n = [2, 3, 4]. Find the equation of the plane.
+
+The normal vector for this plane is n = (2, 3, 4). Using the equation of the plane:
+
+2(x - 1) + 3(y - 2) + 4(z - 3) = 0
+
+Expanding gives:  
+2x + 3y + 4z = 20
+
+Thus, the equation of the plane is:  
+**2x + 3y + 4z = 20**
+
+### 4. We have two planes 2x + 3y + 4z = 5 and 3x + 4y + 2z = 6. Find the line of intersection of these planes.
+
+To find the line of intersection of two planes, solve the system of equations for two variables and express the third variable as a parameter.
+
+From the system of equations:  
+2x + 3y + 4z = 5 (1)  
+3x + 4y + 2z = 6 (2)
+
+Multiply equation (1) by 3 and equation (2) by 2 to align the coefficients of x:  
+6x + 9y + 12z = 15 (3)  
+6x + 8y + 4z = 12 (4)
+
+Subtract equation (4) from equation (3):  
+y + 8z = 3 (5)
+
+Solve for y in terms of z:  
+y = 3 - 8z
+
+Substitute y = 3 - 8z into equation (1):  
+2x + 3(3 - 8z) + 4z = 5
+
+Simplify:  
+x = 10z - 2
+
+Thus, the parametric equations of the line of intersection are:  
+x = 10z - 2, y = 3 - 8z, z = z
+
+Alternatively, the parametric form is:  
+**(x, y, z) = (-2, 3, 0) + z(10, -8, 1)**
+
+### 5. Write the equation of the plane passing through point A(1, 2, 3) and parallel to vectors v1 = [1, 0, 1] and v2 = [0, 1, -1].
+
+The normal vector of the plane can be found by computing the cross product of v1 and v2:
+
+**Normal vector** n = v1 × v2 =  
+| i  j  k |  
+| 1  0  1 |  
+| 0  1 -1 |
+
+This gives: n = (-1, 1, 1)
+
+The equation of the plane passing through point A(1, 2, 3) is:
+
+-1(x - 1) + 1(y - 2) + 1(z - 3) = 0
+
+Expanding gives:  
+-x + y + z = 4
+
+Thus, the equation of the plane is:  
+**-x + y + z = 4**
