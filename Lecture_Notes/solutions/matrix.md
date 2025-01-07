@@ -1872,7 +1872,7 @@ So, the Cartesian coordinates of $\mathbf{v}$ in the new basis are:
 $$ [x_1, x_2, x_3] = [3, 3, -1] $$
 
 ![
-](Screenshot%202025-01-07%20at%2007.22.36.png)
+](<Screenshot 2025-01-07 at 07.22.36 AM.png>)
 
 
 
