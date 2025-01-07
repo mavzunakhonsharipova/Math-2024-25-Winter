@@ -1760,3 +1760,122 @@ $$
 x_1 = 4, \quad x_2 = 5, \quad x_3 = 6
 $$
 ---
+## 11. Vectors I
+
+1. By what number should vector $\mathbf{a} = [3, 4]$ be multiplied so that its length is equal to 1?
+
+2. Calculate the length of vector $\mathbf{b} = [1, 1]$ and find the unit vector of this vector.
+
+3. Plot the vector and the unit vector from the previous exercise.
+
+4. Calculate the length of vector $\mathbf{c} = [1, 2, 3]$ and find the unit vector of this vector.
+
+5. Find the Cartesian coordinates of vector $\mathbf{v} = [2, 3, 4]$ in the basis $\{\mathbf{b_1} = [1, 0, 1], \mathbf{b_2} = [0, 1, 0], \mathbf{b_3} = [1, 0, -1]\}$.
+
+## Solutions to Vectors I
+
+### 1. By what number should vector $\mathbf{a} = [3, 4]$ be multiplied so that its length is equal to 1?
+
+The length (magnitude) of a vector $\mathbf{a} = [x, y]$ is given by:
+$$ \|\mathbf{a}\| = \sqrt{x^2 + y^2} $$
+
+For $\mathbf{a} = [3, 4]$, the length is:
+$$ \|\mathbf{a}\| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5 $$
+
+To make the length equal to 1, we need to multiply the vector by the reciprocal of its length:
+$$ k = \frac{1}{\|\mathbf{a}\|} = \frac{1}{5} $$
+
+Thus, the vector should be multiplied by $ \frac{1}{5} $.
+
+---
+
+### 2. Calculate the length of vector $\mathbf{b} = [1, 1]$ and find the unit vector of this vector.
+
+The length of vector $\mathbf{b} = [x, y]$ is:
+$$ \|\mathbf{b}\| = \sqrt{x^2 + y^2} $$
+
+For $\mathbf{b} = [1, 1]$:
+$$ \|\mathbf{b}\| = \sqrt{1^2 + 1^2} = \sqrt{1 + 1} = \sqrt{2} $$
+
+The unit vector of $\mathbf{b}$ is found by dividing the vector by its magnitude:
+$$ \hat{\mathbf{b}} = \frac{\mathbf{b}}{\|\mathbf{b}\|} = \frac{[1, 1]}{\sqrt{2}} = \left[\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right] $$
+
+So, the unit vector is:
+$$ \hat{\mathbf{b}} = \left[\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right] $$
+
+---
+
+### 3. Plot the vector and the unit vector from the previous exercise.
+
+To plot the vectors $\mathbf{b} = [1, 1]$ and $\hat{\mathbf{b}} = \left[\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right]$, consider:
+
+- Vector $\mathbf{b} = [1, 1]$ points from the origin (0,0) to the point (1,1).
+- Unit vector $\hat{\mathbf{b}} = \left[\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right]$ points to approximately (0.707, 0.707).
+
+The plot will show both vectors starting at the origin.
+
+---
+
+### 4. Calculate the length of vector $\mathbf{c} = [1, 2, 3]$ and find the unit vector of this vector.
+
+The length of vector $\mathbf{c} = [x, y, z]$ is:
+$$ \|\mathbf{c}\| = \sqrt{x^2 + y^2 + z^2} $$
+
+For $\mathbf{c} = [1, 2, 3]$:
+$$ \|\mathbf{c}\| = \sqrt{1^2 + 2^2 + 3^2} = \sqrt{1 + 4 + 9} = \sqrt{14} $$
+
+The unit vector of $\mathbf{c}$ is:
+$$ \hat{\mathbf{c}} = \frac{\mathbf{c}}{\|\mathbf{c}\|} = \frac{[1, 2, 3]}{\sqrt{14}} = \left[\frac{1}{\sqrt{14}}, \frac{2}{\sqrt{14}}, \frac{3}{\sqrt{14}}\right] $$
+
+So, the unit vector is:
+$$ \hat{\mathbf{c}} = \left[\frac{1}{\sqrt{14}}, \frac{2}{\sqrt{14}}, \frac{3}{\sqrt{14}}\right] $$
+
+---
+
+### 5. Find the Cartesian coordinates of vector 
+$\mathbf{v} = [2, 3, 4]$ in the basis $\{\mathbf{b_1} = [1, 0, 1], \mathbf{b_2} = [0, 1, 0], \mathbf{b_3} = [1, 0, -1]\}$.
+
+To express vector $\mathbf{v} = [2, 3, 4]$ in the new basis $\{\mathbf{b_1}, \mathbf{b_2}, \mathbf{b_3}\}$, we need to find scalars $x_1$, $x_2$, and $x_3$ such that:
+$$ \mathbf{v} = x_1 \mathbf{b_1} + x_2 \mathbf{b_2} + x_3 \mathbf{b_3} $$
+
+This gives the system of equations:
+$$ [2, 3, 4] = x_1 [1, 0, 1] + x_2 [0, 1, 0] + x_3 [1, 0, -1] $$
+
+Which leads to:
+\[
+\begin{aligned}
+x_1 + x_3 &= 2 \\
+x_2 &= 3 \\
+x_1 - x_3 &= 4
+\end{aligned}
+\]
+
+Solving this system:
+
+From $x_2 = 3$, substitute into the first and third equations:
+$$ x_1 + x_3 = 2 \quad \text{and} \quad x_1 - x_3 = 4 $$
+
+Adding these two equations:
+$$ (x_1 + x_3) + (x_1 - x_3) = 2 + 4 \\
+2x_1 = 6 \\
+x_1 = 3
+$$
+
+Substitute $x_1 = 3$ into $x_1 + x_3 = 2$:
+$$ 3 + x_3 = 2 \\
+x_3 = -1
+$$
+
+Thus, the coefficients are $x_1 = 3$, $x_2 = 3$, and $x_3 = -1$.
+
+So, the Cartesian coordinates of $\mathbf{v}$ in the new basis are:
+$$ [x_1, x_2, x_3] = [3, 3, -1] $$
+
+![
+](Screenshot%202025-01-07%20at%2007.22.36.png)
+
+
+
+
+
+
