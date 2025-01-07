@@ -3071,21 +3071,22 @@ The inverse of f = (1, 7), (2, 7), (3, 11) does not exist.
 ### Step 1: $f(x) = x - 1$
 
 ### Step 2: Swap $ f(x) $ and $ x $
-To find the inverse function, we swap $ f(x) $ and $ x $. Let $ y = f(x) $ so:
-$y = x - 1$
-Now, swap $ x $ and $ y $:
-$x = y - 1 $
-### Step 3: Solve for $ y $
-To solve for $ y $ add 1 to both sides:
-$y = x + 1$
+To find the inverse function, we swap f(x) and x. 
+Let $$y = f(x)$$ so:
+$$y = x - 1$$
+Now, swap  x and y:
+$$x = y - 1$$
+### Step 3: Solve for y
+To solve for $$ y $$ add 1 to both sides:
+$$y = x + 1$$
 Thus, the inverse function is:
-$
+$$
 f^{-1}(x) = x + 1
-$
+$$
 ### Step 4: Display both functions on Geogebra
 To plot both functions on a Geogebra notebook, you can input the following commands:
 
 $$ 1. f(x) = x - 1 $$
 $$ 2. f^{-1}(x) = x + 1 $$
 
-You will be able to see both functions on the same graph, and ideally, the graph of the inverse will reflect across the line $ y = x $
+You will be able to see both functions on the same graph, and ideally, the graph of the inverse will reflect across the line $$ y = x $$
